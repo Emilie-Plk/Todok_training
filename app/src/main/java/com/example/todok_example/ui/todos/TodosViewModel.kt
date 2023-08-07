@@ -7,6 +7,9 @@ import javax.inject.Inject
 
 @HiltViewModel
 class TodosViewModel @Inject constructor() : ViewModel() {
+    fun onAddButtonClicked() {
+        TODO("Not yet implemented")
+    }
 
     val viewStateLiveData: LiveData<List<TodosViewStateItem>>
 }

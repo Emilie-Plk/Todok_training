@@ -3,4 +3,6 @@
     <string name="a11y_delete_task">delete task</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="no_todo_tv">No Todo</string>
+    <string name="add_new_todo_a11y">add new todo</string>
 </resources>
