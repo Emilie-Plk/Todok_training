@@ -5,4 +5,11 @@
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="no_todo_tv">No Todo</string>
     <string name="add_new_todo_a11y">add new todo</string>
+    <string name="add_new_todo_title">Add new todo</string>
+    <string name="add_todo_category_hint">Category</string>
+    <string name="add_todo_body_hint">Type your todo here</string>
+    <string name="familial_category">Family</string>
+    <string name="professional_category">Professional</string>
+    <string name="profesional_category">Professional</string>
+    <string name="personal_category">Personal</string>
 </resources>

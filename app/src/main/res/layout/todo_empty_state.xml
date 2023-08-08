@@ -13,8 +13,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         android:src="@drawable/baseline_no_todo_24"
-        app:tint="@color/grayish_black"
-        />
+        app:tint="@color/grayish_black" />
 
     <TextView
         android:id="@+id/todo_empty_state_tv"
@@ -27,7 +26,6 @@
         app:layout_constraintTop_toBottomOf="@id/todo_empty_state_iv"
         android:text="@string/no_todo_tv"
         android:textSize="24sp"
-        android:textStyle="bold"
-        />
+        android:textStyle="bold" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
