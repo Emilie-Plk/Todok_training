@@ -14,14 +14,14 @@
         app:layout_constraintBaseline_toTopOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:tint="@color/tender_green" />
+        app:tint="@color/tender_green"
+        android:importantForAccessibility="no" />
 
     <TextView
         android:id="@+id/add_todo_category_item_tv_name"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_margin="8dp"
-        android:importantForAccessibility="no"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@id/add_todo_category_item_iv_color"
         app:layout_constraintTop_toTopOf="parent"
