@@ -13,5 +13,5 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "TodoK_example"
+rootProject.name = "todok"
 include(":app")

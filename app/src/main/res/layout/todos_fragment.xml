@@ -17,7 +17,7 @@
         android:layout_height="0dp" />
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
-        style="@style/Theme.Todok_example.fab"
+        style="@style/Theme.todok.fab"
         android:id="@+id/add_todo_fab"
         android:layout_width="56dp"
         android:layout_height="56dp"

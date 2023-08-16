@@ -6,12 +6,12 @@ plugins {
 }
 
 android {
-    namespace = "com.example.todok_example"
+    namespace = "com.example.todok"
     compileSdk = 33
 
     defaultConfig {
-        applicationId = "com.example.todok_example"
-        minSdk = 21
+        applicationId = "com.example.todok"
+        minSdk = 26
         targetSdk = 33
         versionCode = 1
         versionName = "1.0"
@@ -30,12 +30,12 @@ android {
     }
 
     compileOptions {
-        sourceCompatibility = JavaVersion.VERSION_1_8
-        targetCompatibility = JavaVersion.VERSION_1_8
+        sourceCompatibility = JavaVersion.VERSION_17
+        targetCompatibility = JavaVersion.VERSION_17
     }
 
     kotlinOptions {
-        jvmTarget = "1.8"
+        jvmTarget = "17"
     }
 
     buildFeatures {
@@ -67,6 +67,7 @@ dependencies {
     // WORK
     implementation("androidx.work:work-runtime-ktx:2.8.1")
     implementation("androidx.hilt:hilt-work:1.0.0")
+    implementation("androidx.hilt:hilt-compiler:1.0.0")
 
     // GSON
     implementation("com.google.code.gson:gson:2.9.1")

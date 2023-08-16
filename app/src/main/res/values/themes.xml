@@ -1,13 +1,13 @@
 <resources>
     <!-- Base application theme. -->
-    <style name="Base.Theme.TodoK_example" parent="Theme.Material3.DayNight.NoActionBar">
+    <style name="Base.Theme.todok" parent="Theme.Material3.DayNight.NoActionBar">
         <!-- Customize your light theme here. -->
         <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
     </style>
 
-    <style name="Theme.TodoK_example" parent="Base.Theme.TodoK_example" />
+    <style name="Theme.todok" parent="Base.Theme.todok" />
 
-    <style name="Theme.Todok_example.fab" parent="ShapeAppearanceOverlay.Material3.FloatingActionButton">
+    <style name="Theme.todok.fab" parent="ShapeAppearanceOverlay.Material3.FloatingActionButton">
         <item name="backgroundTint">@color/light_gray</item>
         <item name="tint">@color/tender_green</item>
     </style>
