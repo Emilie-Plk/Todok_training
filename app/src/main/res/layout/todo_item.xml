@@ -9,7 +9,7 @@
         android:id="@+id/note_item_ImageView_color"
         android:layout_width="48dp"
         android:layout_height="48dp"
-        android:layout_margin="8dp"
+        android:layout_marginStart="16dp"
         android:importantForAccessibility="no"
         android:src="@drawable/baseline_circle_24"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -25,6 +25,7 @@
         android:importantForAccessibility="no"
         android:textSize="16sp"
         android:ellipsize="end"
+        android:maxLines="2"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@id/task_item_ImageView_delete"
@@ -42,6 +43,6 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:tint="@color/deep_red" />
+        app:tint="@color/accent_color" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

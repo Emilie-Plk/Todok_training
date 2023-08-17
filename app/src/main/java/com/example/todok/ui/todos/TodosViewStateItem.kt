@@ -22,6 +22,7 @@ sealed class TodosViewStateItem(val type: Type) {
         val description: String,
         val isDone: Boolean,
         val onDeleteEvent: EquatableCallback,
+        val onLongClickEvent: EquatableCallback,
     ) : TodosViewStateItem(Type.TODO)
 
     object EmptyState : TodosViewStateItem(Type.EMPTY_STATE)

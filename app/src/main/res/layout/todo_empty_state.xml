@@ -14,7 +14,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/todo_empty_state_tv"
-        app:tint="@color/grayish_black" />
+        app:tint="@color/tender_blue" />
 
     <TextView
         android:id="@+id/todo_empty_state_tv"

@@ -51,7 +51,7 @@ abstract class AppDatabase : RoomDatabase() {
                                 name = application.getString(R.string.personal_category),
                                 colorInt = ResourcesCompat.getColor(
                                     application.resources,
-                                    R.color.deep_red,
+                                    R.color.personal_category,
                                     null
                                 )
                             ),
@@ -59,7 +59,7 @@ abstract class AppDatabase : RoomDatabase() {
                                 name = application.getString(R.string.profesional_category),
                                 colorInt = ResourcesCompat.getColor(
                                     application.resources,
-                                    R.color.grayish_black,
+                                    R.color.professional_category,
                                     null
                                 )
                             ),
@@ -67,7 +67,7 @@ abstract class AppDatabase : RoomDatabase() {
                                 name = application.getString(R.string.familial_category),
                                 colorInt = ResourcesCompat.getColor(
                                     application.resources,
-                                    R.color.black,
+                                    R.color.family_category,
                                     null
                                 )
                             ),

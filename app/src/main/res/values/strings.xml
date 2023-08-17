@@ -13,4 +13,8 @@
     <string name="profesional_category">Professional</string>
     <string name="personal_category">Personal</string>
     <string name="menu_sort">Sort</string>
+    <string name="cant_insert_todo">Cannot add todo to database!</string>
+    <string name="error_inserting_todo">Please chose a category and enter a todo!</string>
+    <string name="add_todo_cancel_btn">cancel</string>
+    <string name="add_todo_save_btn">save</string>
 </resources>

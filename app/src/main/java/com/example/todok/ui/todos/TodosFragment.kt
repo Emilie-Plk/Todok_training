@@ -9,6 +9,7 @@ import android.view.View
 import androidx.core.view.MenuProvider
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
+import androidx.lifecycle.Lifecycle
 import com.example.todok.R
 import com.example.todok.databinding.TodosFragmentBinding
 import com.example.todok.ui.utils.NavigationListener
@@ -50,6 +51,7 @@ class TodosFragment : Fragment(R.layout.todos_fragment) {
             }
         }
 
+
         requireActivity().addMenuProvider(object : MenuProvider {
             override fun onCreateMenu(menu: Menu, menuInflater: MenuInflater) {
                 menuInflater.inflate(R.menu.todo_menu, menu)
@@ -63,6 +65,6 @@ class TodosFragment : Fragment(R.layout.todos_fragment) {
 
                 else -> false
             }
-        })
+        }, viewLifecycleOwner, Lifecycle.State.RESUMED)
     }
 }

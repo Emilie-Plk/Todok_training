@@ -1,5 +1,8 @@
 package com.example.todok.ui.todos
 
+import android.text.SpannableString
+import android.text.Spanned
+import android.text.style.StrikethroughSpan
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -7,7 +10,7 @@ import android.view.ViewGroup
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
-import com.example.todok.databinding.NoteItemBinding
+import com.example.todok.databinding.TodoItemBinding
 import com.example.todok.databinding.TodoEmptyStateBinding
 import com.example.todok.databinding.TodoHeaderItemBinding
 
@@ -61,10 +64,10 @@ class TodosListAdapter :
             }
         }
 
-        class Todo(private val binding: NoteItemBinding) : TodosViewHolder(binding.root) {
+        class Todo(private val binding: TodoItemBinding) : TodosViewHolder(binding.root) {
             companion object {
                 fun create(parent: ViewGroup) = Todo(
-                    binding = NoteItemBinding.inflate(
+                    binding = TodoItemBinding.inflate(
                         LayoutInflater.from(parent.context),
                         parent,
                         false
@@ -77,6 +80,22 @@ class TodosListAdapter :
                 binding.noteItemTextViewTitle.text = item.description
                 binding.taskItemImageViewDelete.setOnClickListener {
                     item.onDeleteEvent.invoke()
+                }
+                binding.root.setOnLongClickListener {
+                    item.onLongClickEvent.invoke()
+                    true
+                }
+                if (item.isDone) {
+                    val strikethroughText = SpannableString(item.description)
+                    strikethroughText.setSpan(
+                        StrikethroughSpan(),
+                        0,
+                        item.description.length,
+                        Spanned.SPAN_EXCLUSIVE_EXCLUSIVE
+                    )
+                    binding.noteItemTextViewTitle.text = strikethroughText
+                } else {
+                    binding.noteItemTextViewTitle.text = item.description
                 }
             }
         }

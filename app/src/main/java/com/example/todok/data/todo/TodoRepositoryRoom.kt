@@ -24,4 +24,8 @@ class TodoRepositoryRoom @Inject constructor(
     override suspend fun delete(todoId: Long): Boolean = withContext(coroutineDispatcherProvider.io) {
         todoDao.delete(todoId) == 1 // one row deleted
     }
+
+    override suspend fun update(todoEntity: TodoEntity): Boolean = withContext(coroutineDispatcherProvider.io) {
+        todoDao.update(todoEntity) == 1 // one row updated
+    }
 }

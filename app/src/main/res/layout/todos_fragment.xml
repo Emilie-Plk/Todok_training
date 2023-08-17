@@ -6,25 +6,25 @@
     android:layout_height="match_parent">
 
     <androidx.recyclerview.widget.RecyclerView
-        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
         android:id="@+id/todos_rv"
-        app:layout_constraintTop_toTopOf="parent"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent"
-        tools:listitem="@layout/note_item"
-        android:layout_width="0dp"
-        android:layout_height="0dp" />
+        app:layout_constraintTop_toTopOf="parent"
+        tools:listitem="@layout/todo_item" />
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
-        style="@style/Theme.todok.fab"
         android:id="@+id/add_todo_fab"
+        style="@style/Theme.todok.fab"
         android:layout_width="56dp"
         android:layout_height="56dp"
+        android:layout_margin="16dp"
+        android:contentDescription="@string/add_new_todo_a11y"
         android:src="@drawable/baseline_note_add_24"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        android:layout_margin="16dp"
-        android:contentDescription="@string/add_new_todo_a11y" />
+        app:layout_constraintEnd_toEndOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

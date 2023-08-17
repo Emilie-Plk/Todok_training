@@ -1,9 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <color name="black">#FF000000</color>
-    <color name="grayish_black">#232323</color>
+    <color name="family_category">#e3b23c</color>
+    <color name="professional_category">#004e98</color>
     <color name="white">#FFFFFFFF</color>
-    <color name="deep_red">#950000</color>
+    <color name="personal_category">#F06543</color>
     <color name="light_gray">#8C8C8C</color>
-    <color name="tender_green">#6AB36D</color>
+    <color name="tender_blue">#3a6ea5</color>
+
+    <color name="primary_color">#004e98</color>
+    <color name="on_primary_color">#f9f7f3</color>
+    <color name="accent_color">#ff6700</color>
+    <color name="background_color">#ebebeb</color>
+    <color name="background_color_dark">#cfcfcf</color>
 </resources>

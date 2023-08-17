@@ -14,7 +14,7 @@
         app:layout_constraintBaseline_toTopOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:tint="@color/tender_green"
+        app:tint="@color/tender_blue"
         android:importantForAccessibility="no" />
 
     <TextView

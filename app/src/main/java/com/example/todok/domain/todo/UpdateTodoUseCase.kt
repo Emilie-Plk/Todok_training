@@ -2,11 +2,10 @@ package com.example.todok.domain.todo
 
 import javax.inject.Inject
 
-class AddTodoUseCase @Inject constructor(
+class UpdateTodoUseCase @Inject constructor(
     private val todoRepository: TodoRepository,
 ) {
 
     suspend fun invoke(todo: TodoEntity) : Boolean =
-        todoRepository.add(todo)
+        todoRepository.update(todo)
 }
-
