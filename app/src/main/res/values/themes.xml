@@ -9,6 +9,7 @@
 
     <style name="Theme.todok.fab" parent="ShapeAppearanceOverlay.Material3.FloatingActionButton">
         <item name="backgroundTint">@color/white</item>
-        //<item name="tint">@color/tender_blue</item>
+        //
+        <item name="tint">@color/tender_blue</item>
     </style>
 </resources>

@@ -17,7 +17,8 @@ sealed class NativeText {
     }
 
     data class Plural(@PluralsRes val id: Int, val number: Int, val args: List<Any>) : NativeText() {
-        override fun toCharSequence(context: Context): CharSequence = context.resources.getQuantityString(id, number, *args.toTypedArray())
+        override fun toCharSequence(context: Context): CharSequence =
+            context.resources.getQuantityString(id, number, *args.toTypedArray())
     }
 
     data class Arguments(@StringRes val id: Int, val args: List<Any>) : NativeText() {

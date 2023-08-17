@@ -42,7 +42,8 @@ class AddTodoDialogFragment : DialogFragment(R.layout.add_todo_fragment) {
         viewModel.viewStateLiveData.observe(this) { addTodoViewState ->
             adapter.setData(addTodoViewState.items)
             binding.addTodoBtnSave.isEnabled = addTodoViewState.isSaveButtonEnabled
-            binding.addTodoProgressbar.visibility = if (addTodoViewState.isProgressBarVisible) View.VISIBLE else View.INVISIBLE
+            binding.addTodoProgressbar.visibility =
+                if (addTodoViewState.isProgressBarVisible) View.VISIBLE else View.INVISIBLE
         }
 
         viewModel.singleLiveEvent.observe(this) { addTodoEvent: AddTodoEvent ->

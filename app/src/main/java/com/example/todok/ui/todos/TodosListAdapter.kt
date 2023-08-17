@@ -6,13 +6,12 @@ import android.text.style.StrikethroughSpan
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
-import com.example.todok.databinding.TodoItemBinding
 import com.example.todok.databinding.TodoEmptyStateBinding
 import com.example.todok.databinding.TodoHeaderItemBinding
+import com.example.todok.databinding.TodoItemBinding
 
 class TodosListAdapter :
     ListAdapter<TodosViewStateItem, TodosListAdapter.TodosViewHolder>(TodosDiffCallback) {
