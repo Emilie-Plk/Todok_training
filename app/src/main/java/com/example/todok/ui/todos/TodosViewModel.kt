@@ -65,7 +65,6 @@ class TodosViewModel @Inject constructor(
                     }
                 }.takeIf { it.isNotEmpty() } ?: listOf(TodosViewStateItem.EmptyState)
             )
-
         }.collect()
     }
 

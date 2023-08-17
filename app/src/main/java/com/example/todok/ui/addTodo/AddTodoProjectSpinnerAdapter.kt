@@ -58,9 +58,7 @@ class AddTodoProjectSpinnerAdapter : ListAdapter, Filterable {
     override fun getFilter() = object : Filter() {
         override fun performFiltering(constraint: CharSequence) = FilterResults()
         override fun publishResults(constraint: CharSequence, results: FilterResults?) {}
-        override fun convertResultToString(resultValue: Any): CharSequence {
-            return (resultValue as AddTodoViewStateItem).categoryName
-        }
+        override fun convertResultToString(resultValue: Any): CharSequence = (resultValue as AddTodoViewStateItem).categoryName
     }
 
     fun setData(items: List<AddTodoViewStateItem>) {

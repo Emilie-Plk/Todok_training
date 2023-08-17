@@ -6,7 +6,6 @@ class AddTodoUseCase @Inject constructor(
     private val todoRepository: TodoRepository,
 ) {
 
-    suspend fun invoke(todo: TodoEntity): Boolean =
-        todoRepository.add(todo)
+    suspend fun invoke(todo: TodoEntity): Boolean = todoRepository.add(todo)
 }
 

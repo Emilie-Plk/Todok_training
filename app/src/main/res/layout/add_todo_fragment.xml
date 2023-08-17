@@ -102,6 +102,6 @@
         app:layout_constraintEnd_toStartOf="@id/add_todo_btn_cancel"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@id/add_todo_btn_cancel"
-
+        tools:visibility="gone"
         />
 </androidx.constraintlayout.widget.ConstraintLayout>
